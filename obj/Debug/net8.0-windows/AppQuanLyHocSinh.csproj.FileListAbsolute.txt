@@ -3,7 +3,6 @@ C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\bin\Debug\net8.0
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\bin\Debug\net8.0-windows\AppQuanLyHocSinh.runtimeconfig.json
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\bin\Debug\net8.0-windows\AppQuanLyHocSinh.dll
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\bin\Debug\net8.0-windows\AppQuanLyHocSinh.pdb
-C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.Form1.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.csproj.GenerateResource.cache
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.AssemblyInfoInputs.cache
@@ -37,3 +36,6 @@ C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\bin\Debug\net8.0
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.csproj.AssemblyReference.cache
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.RegistationForm.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanL.3C969C66.Up2Date
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.sourcelink.json
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.MainForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ManageStudentForm.resources

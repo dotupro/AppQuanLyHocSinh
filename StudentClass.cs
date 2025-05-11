@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace AppQuanLyHocSinh
 {
@@ -34,6 +35,41 @@ namespace AppQuanLyHocSinh
                 conn.closeConnection();
                 return false;
             }
+        }
+        public DataTable getStudentList()
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `student`", conn.getconnection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public string exeCount(string query)
+        {
+            MySqlCommand command = new MySqlCommand(query, conn.getconnection);
+            conn.openConnection();
+            string count = command.ExecuteScalar().ToString();            
+            conn.closeConnection();
+            return count;
+        }
+
+        public string totalStudent()
+        {
+            string query = "SELECT COUNT(*) FROM student";
+            return exeCount(query);
+        }
+
+        public string maleStudent() 
+        {
+            string query = "SELECT COUNT(*) FROM student WHERE `Gender`='Male'";
+            return exeCount(query);
+        }
+
+        public string femaleStudent()
+        {
+            string query = "SELECT COUNT(*) FROM student WHERE `Gender`='Female'";
+            return exeCount(query);
         }
     }
 }

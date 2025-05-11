@@ -19,6 +19,31 @@ namespace AppQuanLyHocSinh
             InitializeComponent();
         }
 
+        bool verify()
+        {
+            if ((textBox_fName.Text == "") || (textBox_lName.Text == "") || (textBox_phone.Text == "") || (textBox_address.Text == "") || (pictureBox_student.Image == null))
+            {
+                MessageBox.Show("Please fill all the fields");
+                return false;
+            }
+
+            return true;
+        }
+
+        public void showTable()
+        {
+            DataGridView_student.DataSource = student.getStudentList();
+            DataGridView_student.RowTemplate.Height = 80;
+            DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+            imgCol = (DataGridViewImageColumn)DataGridView_student.Columns[7];
+            imgCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
+        }
+
+        private void RegistationForm_Load(object sender, EventArgs e)
+        {
+            showTable();
+        }
+
         private void button_upload_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -40,7 +65,7 @@ namespace AppQuanLyHocSinh
             int this_year = DateTime.Now.Year;
             if ((this_year - born_year) < 10 || (this_year - born_year) > 100)
             {
-                MessageBox.Show("Student must be between 10 to 100 years old","Invalid Birthdate", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Student must be between 10 to 100 years old", "Invalid Birthdate", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else if (verify())
@@ -52,9 +77,11 @@ namespace AppQuanLyHocSinh
                     byte[] img = ms.ToArray();
                     if (student.insertStudent(fName, lName, bdate, gender, phone, address, img))
                     {
+                        showTable();
                         MessageBox.Show("Student added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                }catch(Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -65,20 +92,13 @@ namespace AppQuanLyHocSinh
             }
         }
 
-        bool verify()
-        {
-            if ((textBox_fName.Text == "") || (textBox_lName.Text == "") || (textBox_phone.Text == "") || (textBox_address.Text == "") || (pictureBox_student.Image == null))
-            {
-                MessageBox.Show("Please fill all the fields");
-                return false;
-            }
-            
-            return true;
-        }
-
         private void button_clear_Click(object sender, EventArgs e)
         {
-
+            textBox_fName.Clear();
+            textBox_lName.Clear();
+            textBox_phone.Clear();
+            textBox_address.Clear();
+            pictureBox_student.Image = null;
         }
     }
 }

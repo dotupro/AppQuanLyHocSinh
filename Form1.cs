@@ -1,11 +1,24 @@
 namespace AppQuanLyHocSinh
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        StudentClass student = new StudentClass();
+        public MainForm()
         {
             InitializeComponent();
             customDesign();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            studentCount();
+        }
+
+        private void studentCount()
+        {
+            label_totalStd.Text = "Total Student: " + student.totalStudent();
+            label_male.Text = "Male: " + student.maleStudent();
+            label_female.Text = "Female: " + student.femaleStudent();
         }
 
         private void customDesign()
@@ -58,11 +71,13 @@ namespace AppQuanLyHocSinh
 
         private void button_registation_Click(object sender, EventArgs e)
         {
+            openchildForm(new RegistationForm());
             hideSubmenu();
         }
 
         private void button_manageStd_Click(object sender, EventArgs e)
         {
+            openchildForm(new ManageStudentForm());
             hideSubmenu();
         }
 
@@ -99,6 +114,39 @@ namespace AppQuanLyHocSinh
         private void button_scorePrint_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+        }
+
+        private Form activeform = null;
+        private void openchildForm(Form childForm)
+        {
+            if (activeform != null)
+                activeform.Close();
+            activeform = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_main.Controls.Add(childForm);
+            panel_main.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void button_db_Click(object sender, EventArgs e)
+        {
+            if (activeform != null)
+                activeform.Close();
+            panel_main.Controls.Add(activeform);
+            studentCount();
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

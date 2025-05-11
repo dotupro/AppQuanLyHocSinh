@@ -1,6 +1,6 @@
 ﻿namespace AppQuanLyHocSinh
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,6 +30,7 @@
         {
             panel_slide = new Panel();
             button_exit = new Button();
+            button_db = new Button();
             panel_scoreSubmenu = new Panel();
             button_scorePrint = new Button();
             button_manageScore = new Button();
@@ -48,33 +49,37 @@
             button_std = new Button();
             panel_logo = new Panel();
             label4 = new Label();
-            panel1 = new Panel();
-            label11 = new Label();
+            panel_main = new Panel();
+            panel_cover = new Panel();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            Welcome = new Label();
-            panel3 = new Panel();
-            label10 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            comboBox1 = new ComboBox();
-            label7 = new Label();
             label6 = new Label();
             label5 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             pictureBox2 = new PictureBox();
+            panel3 = new Panel();
+            comboBox1 = new ComboBox();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label_female = new Label();
+            label_male = new Label();
+            label_totalStd = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
             panel_slide.SuspendLayout();
             panel_scoreSubmenu.SuspendLayout();
             panel_courseSubmenu.SuspendLayout();
             panel_studentmenu.SuspendLayout();
             panel_logo.SuspendLayout();
-            panel1.SuspendLayout();
+            panel_main.SuspendLayout();
+            panel_cover.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel_slide
@@ -82,6 +87,7 @@
             panel_slide.AutoScroll = true;
             panel_slide.BackColor = Color.FromArgb(0, 71, 160);
             panel_slide.Controls.Add(button_exit);
+            panel_slide.Controls.Add(button_db);
             panel_slide.Controls.Add(panel_scoreSubmenu);
             panel_slide.Controls.Add(button_score);
             panel_slide.Controls.Add(panel_courseSubmenu);
@@ -102,14 +108,32 @@
             button_exit.FlatStyle = FlatStyle.Flat;
             button_exit.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button_exit.ForeColor = Color.White;
-            button_exit.Location = new Point(0, 688);
+            button_exit.Location = new Point(0, 733);
             button_exit.Name = "button_exit";
             button_exit.Padding = new Padding(10, 0, 0, 0);
             button_exit.Size = new Size(179, 45);
-            button_exit.TabIndex = 6;
+            button_exit.TabIndex = 7;
             button_exit.Text = "Exit";
             button_exit.TextAlign = ContentAlignment.MiddleLeft;
             button_exit.UseVisualStyleBackColor = true;
+            button_exit.Click += button_exit_Click;
+            // 
+            // button_db
+            // 
+            button_db.Dock = DockStyle.Top;
+            button_db.FlatAppearance.BorderSize = 0;
+            button_db.FlatStyle = FlatStyle.Flat;
+            button_db.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button_db.ForeColor = Color.White;
+            button_db.Location = new Point(0, 688);
+            button_db.Name = "button_db";
+            button_db.Padding = new Padding(10, 0, 0, 0);
+            button_db.Size = new Size(179, 45);
+            button_db.TabIndex = 6;
+            button_db.Text = "Dashboard";
+            button_db.TextAlign = ContentAlignment.MiddleLeft;
+            button_db.UseVisualStyleBackColor = true;
+            button_db.Click += button_db_Click;
             // 
             // panel_scoreSubmenu
             // 
@@ -379,222 +403,248 @@
             label4.TabIndex = 3;
             label4.Text = "P";
             // 
-            // panel1
+            // panel_main
             // 
-            panel1.Controls.Add(label11);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(200, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(932, 67);
-            panel1.TabIndex = 1;
+            panel_main.Controls.Add(panel_cover);
+            panel_main.Dock = DockStyle.Fill;
+            panel_main.Location = new Point(200, 0);
+            panel_main.Name = "panel_main";
+            panel_main.Size = new Size(1071, 603);
+            panel_main.TabIndex = 6;
             // 
-            // label11
+            // panel_cover
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(0, 71, 180);
-            label11.Location = new Point(0, 9);
-            label11.Name = "label11";
-            label11.Size = new Size(366, 35);
-            label11.TabIndex = 1;
-            label11.Text = "International School";
+            panel_cover.Controls.Add(panel2);
+            panel_cover.Controls.Add(pictureBox2);
+            panel_cover.Controls.Add(panel3);
+            panel_cover.Controls.Add(panel1);
+            panel_cover.Dock = DockStyle.Fill;
+            panel_cover.Location = new Point(0, 0);
+            panel_cover.Name = "panel_cover";
+            panel_cover.Size = new Size(1071, 603);
+            panel_cover.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(0, 71, 180);
+            panel2.BackColor = Color.FromArgb(0, 71, 200);
             panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(Welcome);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(200, 67);
+            panel2.Location = new Point(0, 63);
             panel2.Name = "panel2";
-            panel2.Size = new Size(932, 67);
-            panel2.TabIndex = 2;
+            panel2.Size = new Size(1071, 74);
+            panel2.TabIndex = 5;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Right;
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.th;
-            pictureBox1.Location = new Point(865, 0);
+            pictureBox1.Location = new Point(982, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 64);
+            pictureBox1.Size = new Size(86, 74);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(150, 15);
-            label3.Name = "label3";
-            label3.Size = new Size(48, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Prider";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(150, 37);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Admin";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(69, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(46, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Role :";
-            // 
-            // Welcome
-            // 
-            Welcome.AutoSize = true;
-            Welcome.ForeColor = Color.White;
-            Welcome.Location = new Point(37, 15);
-            Welcome.Name = "Welcome";
-            Welcome.Size = new Size(78, 20);
-            Welcome.TabIndex = 0;
-            Welcome.Text = "Welcome :";
-            // 
-            // panel3
-            // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel3.BackColor = Color.FromArgb(0, 71, 180);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(comboBox1);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label5);
-            panel3.Location = new Point(200, 515);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(932, 88);
-            panel3.TabIndex = 3;
-            // 
-            // label10
-            // 
-            label10.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label10.AutoSize = true;
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(500, 21);
-            label10.Name = "label10";
-            label10.Size = new Size(91, 20);
-            label10.TabIndex = 7;
-            label10.Text = "Select class :";
-            // 
-            // label8
-            // 
-            label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(732, 56);
-            label8.Name = "label8";
-            label8.Size = new Size(64, 20);
-            label8.TabIndex = 6;
-            label8.Text = "Female :";
-            // 
-            // label9
-            // 
-            label9.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label9.AutoSize = true;
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(619, 56);
-            label9.Name = "label9";
-            label9.Size = new Size(49, 20);
-            label9.TabIndex = 5;
-            label9.Text = "Male :";
-            // 
-            // comboBox1
-            // 
-            comboBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(599, 18);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(276, 28);
-            comboBox1.TabIndex = 4;
-            // 
-            // label7
-            // 
-            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.AutoSize = true;
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(150, 45);
-            label7.Name = "label7";
-            label7.Size = new Size(64, 20);
-            label7.TabIndex = 3;
-            label7.Text = "Female :";
             // 
             // label6
             // 
             label6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label6.AutoSize = true;
             label6.ForeColor = Color.White;
-            label6.Location = new Point(37, 45);
+            label6.Location = new Point(161, 42);
             label6.Name = "label6";
-            label6.Size = new Size(49, 20);
-            label6.TabIndex = 2;
-            label6.Text = "Male :";
+            label6.Size = new Size(53, 20);
+            label6.TabIndex = 3;
+            label6.Text = "Admin";
             // 
             // label5
             // 
             label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label5.AutoSize = true;
             label5.ForeColor = Color.White;
-            label5.Location = new Point(37, 14);
+            label5.Location = new Point(161, 13);
             label5.Name = "label5";
-            label5.Size = new Size(108, 20);
-            label5.TabIndex = 1;
-            label5.Text = "Total students :";
+            label5.Size = new Size(48, 20);
+            label5.TabIndex = 2;
+            label5.Text = "Prider";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label3.AutoSize = true;
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(109, 42);
+            label3.Name = "label3";
+            label3.Size = new Size(46, 20);
+            label3.TabIndex = 1;
+            label3.Text = "Role: ";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label2.AutoSize = true;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(80, 13);
+            label2.Name = "label2";
+            label2.Size = new Size(78, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Welcome: ";
             // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.Image = Properties.Resources.class1;
-            pictureBox2.Location = new Point(200, 127);
+            pictureBox2.Location = new Point(0, 128);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(932, 393);
+            pictureBox2.Size = new Size(1071, 387);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
+            pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // Form1
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(0, 71, 200);
+            panel3.Controls.Add(comboBox1);
+            panel3.Controls.Add(label12);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label10);
+            panel3.Controls.Add(label_female);
+            panel3.Controls.Add(label_male);
+            panel3.Controls.Add(label_totalStd);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, 515);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1071, 88);
+            panel3.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(807, 11);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(186, 28);
+            comboBox1.TabIndex = 7;
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label12.AutoSize = true;
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(884, 56);
+            label12.Name = "label12";
+            label12.Size = new Size(58, 20);
+            label12.TabIndex = 6;
+            label12.Text = "label12";
+            // 
+            // label11
+            // 
+            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label11.AutoSize = true;
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(743, 56);
+            label11.Name = "label11";
+            label11.Size = new Size(58, 20);
+            label11.TabIndex = 5;
+            label11.Text = "label11";
+            // 
+            // label10
+            // 
+            label10.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label10.AutoSize = true;
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(714, 14);
+            label10.Name = "label10";
+            label10.Size = new Size(87, 20);
+            label10.TabIndex = 4;
+            label10.Text = "Select class:";
+            // 
+            // label_female
+            // 
+            label_female.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label_female.AutoSize = true;
+            label_female.ForeColor = Color.White;
+            label_female.Location = new Point(131, 45);
+            label_female.Name = "label_female";
+            label_female.Size = new Size(60, 20);
+            label_female.TabIndex = 3;
+            label_female.Text = "Female:";
+            // 
+            // label_male
+            // 
+            label_male.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label_male.AutoSize = true;
+            label_male.ForeColor = Color.White;
+            label_male.Location = new Point(40, 45);
+            label_male.Name = "label_male";
+            label_male.Size = new Size(45, 20);
+            label_male.TabIndex = 2;
+            label_male.Text = "Male:";
+            // 
+            // label_totalStd
+            // 
+            label_totalStd.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label_totalStd.AutoSize = true;
+            label_totalStd.ForeColor = Color.White;
+            label_totalStd.Location = new Point(40, 14);
+            label_totalStd.Name = "label_totalStd";
+            label_totalStd.Size = new Size(98, 20);
+            label_totalStd.TabIndex = 1;
+            label_totalStd.Text = "Total student:";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1071, 63);
+            panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(0, 71, 180);
+            label1.Location = new Point(368, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(408, 47);
+            label1.TabIndex = 0;
+            label1.Text = "International School";
+            label1.Click += label1_Click;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1132, 603);
-            Controls.Add(pictureBox2);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            ClientSize = new Size(1271, 603);
+            Controls.Add(panel_main);
             Controls.Add(panel_slide);
             MinimumSize = new Size(1150, 650);
-            Name = "Form1";
+            Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "MainForm";
+            Load += MainForm_Load;
             panel_slide.ResumeLayout(false);
             panel_scoreSubmenu.ResumeLayout(false);
             panel_courseSubmenu.ResumeLayout(false);
             panel_studentmenu.ResumeLayout(false);
             panel_logo.ResumeLayout(false);
             panel_logo.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel_main.ResumeLayout(false);
+            panel_cover.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -618,24 +668,45 @@
         private Button button_manageCourse;
         private Button button_newCourse;
         private Button button_course;
-        private Button button_exit;
-        private Panel panel1;
-        private Panel panel2;
-        private Label Welcome;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Button button_db;
         private Label label4;
+
+
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)         
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childForm);
+            panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+        private Panel panel_main;
+        private Panel panel_cover;
+        private Panel panel1;
         private Panel panel3;
+        private Label label1;
         private ComboBox comboBox1;
-        private Label label7;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label_female;
+        private Label label_male;
+        private Label label_totalStd;
+        private Panel panel2;
+        private PictureBox pictureBox1;
         private Label label6;
         private Label label5;
-        private Label label10;
-        private Label label8;
-        private Label label9;
+        private Label label3;
+        private Label label2;
         private PictureBox pictureBox2;
-        private Label label11;
-        private PictureBox pictureBox1;
+        private Button button_exit;
     }
 }
