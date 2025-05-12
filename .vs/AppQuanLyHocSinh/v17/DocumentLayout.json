@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|c:\\users\\windows\\source\\repos\\appquanlyhocsinh\\appquanlyhocsinh\\managestudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\managestudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|c:\\users\\windows\\source\\repos\\appquanlyhocsinh\\appquanlyhocsinh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\appquanlyhocsinh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|c:\\users\\windows\\source\\repos\\appquanlyhocsinh\\appquanlyhocsinh\\studentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\studentclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\appquanlyhocsinh\\managestudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\managestudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\appquanlyhocsinh\\registationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\registationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|c:\\users\\windows\\source\\repos\\appquanlyhocsinh\\appquanlyhocsinh\\registationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE311BC-3296-4848-98C5-6B2EBF0E705D}|AppQuanLyHocSinh\\AppQuanLyHocSinh.csproj|solutionrelative:appquanlyhocsinh\\registationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageStudentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "RelativeToolTip": "AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T04:18:00.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageStudentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\ManageStudentForm.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\ManageStudentForm.cs [Design]",
+              "RelativeToolTip": "AppQuanLyHocSinh\\ManageStudentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T03:18:12.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentClass.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\StudentClass.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\StudentClass.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\StudentClass.cs",
+              "RelativeToolTip": "AppQuanLyHocSinh\\StudentClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwEQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T10:15:11.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\Form1.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\Form1.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\Form1.cs [Design]",
+              "RelativeToolTip": "AppQuanLyHocSinh\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T02:49:13.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\Form1.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\Form1.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\Form1.cs",
+              "RelativeToolTip": "AppQuanLyHocSinh\\Form1.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vw0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T02:53:05.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistationForm.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\RegistationForm.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\RegistationForm.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\RegistationForm.cs",
+              "RelativeToolTip": "AppQuanLyHocSinh\\RegistationForm.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAMwDgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T10:45:01.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\RegistationForm.cs",
+              "RelativeDocumentMoniker": "AppQuanLyHocSinh\\RegistationForm.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\AppQuanLyHocSinh\\AppQuanLyHocSinh\\RegistationForm.cs [Design]",
+              "RelativeToolTip": "AppQuanLyHocSinh\\RegistationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T04:13:29.923Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
