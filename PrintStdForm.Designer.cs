@@ -42,6 +42,7 @@
             radioButton_all = new RadioButton();
             comboBox_class = new ComboBox();
             label1 = new Label();
+            button_search = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridView_student).BeginInit();
             SuspendLayout();
@@ -87,6 +88,7 @@
             button_print.TabIndex = 59;
             button_print.Text = "Print";
             button_print.UseVisualStyleBackColor = false;
+            button_print.Click += button_print_Click;
             // 
             // radioButton_female
             // 
@@ -150,12 +152,12 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             DataGridView_student.DefaultCellStyle = dataGridViewCellStyle3;
             DataGridView_student.GridColor = Color.FromArgb(231, 229, 255);
-            DataGridView_student.Location = new Point(30, 84);
+            DataGridView_student.Location = new Point(18, 84);
             DataGridView_student.Name = "DataGridView_student";
             DataGridView_student.RowHeadersVisible = false;
             DataGridView_student.RowHeadersWidth = 51;
             DataGridView_student.RowTemplate.Height = 80;
-            DataGridView_student.Size = new Size(1068, 232);
+            DataGridView_student.Size = new Size(1080, 232);
             DataGridView_student.TabIndex = 48;
             DataGridView_student.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             DataGridView_student.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -178,6 +180,7 @@
             DataGridView_student.ThemeStyle.RowsStyle.Height = 80;
             DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            DataGridView_student.CellContentClick += DataGridView_student_CellContentClick;
             // 
             // radioButton_all
             // 
@@ -196,7 +199,7 @@
             // 
             comboBox_class.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             comboBox_class.FormattingEnabled = true;
-            comboBox_class.Location = new Point(947, 51);
+            comboBox_class.Location = new Point(795, 50);
             comboBox_class.Name = "comboBox_class";
             comboBox_class.Size = new Size(151, 28);
             comboBox_class.TabIndex = 70;
@@ -207,18 +210,32 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(0, 71, 180);
-            label1.Location = new Point(801, 51);
+            label1.Location = new Point(649, 50);
             label1.Name = "label1";
             label1.Size = new Size(140, 23);
             label1.TabIndex = 71;
             label1.Text = "Select Class :";
             label1.Click += label1_Click;
             // 
+            // button_search
+            // 
+            button_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_search.BackColor = Color.FromArgb(0, 71, 200);
+            button_search.ForeColor = Color.White;
+            button_search.Location = new Point(952, 43);
+            button_search.Name = "button_search";
+            button_search.Size = new Size(149, 41);
+            button_search.TabIndex = 72;
+            button_search.Text = "Search";
+            button_search.UseVisualStyleBackColor = false;
+            button_search.Click += button_search_Click;
+            // 
             // PrintStdForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1110, 486);
+            Controls.Add(button_search);
             Controls.Add(label1);
             Controls.Add(comboBox_class);
             Controls.Add(radioButton_all);
@@ -251,5 +268,6 @@
         private RadioButton radioButton_all;
         private ComboBox comboBox_class;
         private Label label1;
+        private Button button_search;
     }
 }

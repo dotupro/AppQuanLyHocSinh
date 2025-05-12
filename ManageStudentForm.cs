@@ -44,21 +44,6 @@ namespace AppQuanLyHocSinh
             imgCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
         }
 
-        private void DataGridView_student_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            textBox_id.Text = DataGridView_student.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBox_fName.Text = DataGridView_student.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBox_lName.Text = DataGridView_student.Rows[e.RowIndex].Cells[2].Value.ToString();
-            dateTimePicker1.Text = DataGridView_student.Rows[e.RowIndex].Cells[3].Value.ToString();
-            if (DataGridView_student.Rows[e.RowIndex].Cells[4].Value.ToString() == "Male")
-                radioButton_male.Checked = true;
-
-            textBox_phone.Text = DataGridView_student.Rows[e.RowIndex].Cells[5].Value.ToString();
-            textBox_address.Text = DataGridView_student.Rows[e.RowIndex].Cells[6].Value.ToString();
-            byte[] img = (byte[])DataGridView_student.Rows[e.RowIndex].Cells[7].Value;
-            MemoryStream ms = new MemoryStream(img);
-            pictureBox_student.Image = Image.FromStream(ms);
-        }
 
         private void button_clearManaStd_Click(object sender, EventArgs e)
         {
@@ -164,6 +149,22 @@ namespace AppQuanLyHocSinh
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void DataGridView_student_Click(object sender, EventArgs e)
+        {
+            textBox_id.Text = DataGridView_student.CurrentRow.Cells[0].Value.ToString();
+            textBox_fName.Text = DataGridView_student.CurrentRow.Cells[1].Value.ToString();
+            textBox_lName.Text = DataGridView_student.CurrentRow.Cells[2].Value.ToString();
+            dateTimePicker1.Value = Convert.ToDateTime(DataGridView_student.CurrentRow.Cells[3].Value.ToString());
+            if (DataGridView_student.CurrentRow.Cells[4].Value.ToString() == "Male")
+                radioButton_male.Checked = true;
+
+            textBox_phone.Text = DataGridView_student.CurrentRow.Cells[5].Value.ToString();
+            textBox_address.Text = DataGridView_student.CurrentRow.Cells[6].Value.ToString();
+            byte[] img = (byte[])DataGridView_student.CurrentRow.Cells[7].Value;
+            MemoryStream ms = new MemoryStream(img);
+            pictureBox_student.Image = Image.FromStream(ms);
         }
     }
 }

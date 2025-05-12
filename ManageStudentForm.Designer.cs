@@ -315,7 +315,7 @@
             DataGridView_student.ThemeStyle.RowsStyle.Height = 80;
             DataGridView_student.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             DataGridView_student.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            DataGridView_student.CellContentClick += DataGridView_student_CellContentClick;
+            DataGridView_student.Click += DataGridView_student_Click;
             // 
             // textBox_fName
             // 

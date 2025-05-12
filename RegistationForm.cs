@@ -107,5 +107,10 @@ namespace AppQuanLyHocSinh
         {
 
         }
+
+        private void DataGridView_student_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

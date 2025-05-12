@@ -40,3 +40,6 @@ C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.MainForm.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ManageStudentForm.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.PrintStdForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.CourseForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ManageCourseForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.PrinterCourseForm.resources

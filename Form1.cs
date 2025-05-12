@@ -89,16 +89,19 @@ namespace AppQuanLyHocSinh
 
         private void button_newCourse_Click(object sender, EventArgs e)
         {
+            openchildForm(new CourseForm());
             hideSubmenu();
         }
 
         private void button_manageCourse_Click(object sender, EventArgs e)
         {
+            openchildForm(new ManageCourseForm());
             hideSubmenu();
         }
 
         private void button_coursePrint_Click(object sender, EventArgs e)
         {
+            openchildForm(new PrinterCourseForm());
             hideSubmenu();
         }
 
