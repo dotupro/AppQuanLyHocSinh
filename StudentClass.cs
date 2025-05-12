@@ -71,5 +71,66 @@ namespace AppQuanLyHocSinh
             string query = "SELECT COUNT(*) FROM student WHERE `Gender`='Female'";
             return exeCount(query);
         }
+
+        public DataTable searchDtudent(string searchData)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `student` WHERE CONCAT(`StdFirstName`,`StdLastName`,`Address`) LIKE '%"+ searchData +"%'", conn.getconnection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public bool updateStudent(int id, string fName, string lName, DateTime bdate, string gender, string phone, string address, byte[] img)
+        {
+            MySqlCommand command = new MySqlCommand("UPDATE `student` SET `StdFirstName`=@fn,`StdLastName`=@ln,`BirthDate`=@bd,`Gender`=@gd,`Phone`=@ph,`Address`=@adr,`Photo`=@img WHERE `StdId` = @id", conn.getconnection);
+
+            command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = fName;
+            command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = lName;
+            command.Parameters.Add("@bd", MySqlDbType.Date).Value = bdate;
+            command.Parameters.Add("@gd", MySqlDbType.VarChar).Value = gender;
+            command.Parameters.Add("@ph", MySqlDbType.VarChar).Value = phone;
+            command.Parameters.Add("@adr", MySqlDbType.VarChar).Value = address;
+            command.Parameters.Add("@img", MySqlDbType.Blob).Value = img;
+
+            conn.openConnection();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                conn.closeConnection();
+                return true;
+            }
+            else
+            {
+                conn.closeConnection();
+                return false;
+            }
+        }
+
+        public bool deleteStudent(int id)
+        {
+            MySqlCommand command = new MySqlCommand("DELETE FROM `student` WHERE `StdId` = @id", conn.getconnection);
+            command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            conn.openConnection();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                conn.closeConnection();
+                return true;
+            }
+            else
+            {
+                conn.closeConnection();
+                return false;
+            }
+        }
+
+        public DataTable getList(MySqlCommand command)
+        {
+            command.Connection = conn.getconnection;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
     }
 }

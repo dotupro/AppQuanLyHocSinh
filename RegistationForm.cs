@@ -98,7 +98,14 @@ namespace AppQuanLyHocSinh
             textBox_lName.Clear();
             textBox_phone.Clear();
             textBox_address.Clear();
+            radioButton_male.Checked = true;
+            dateTimePicker_bDate.Value = DateTime.Now;
             pictureBox_student.Image = null;
+        }
+
+        private void dateTimePicker_bDate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -83,6 +83,7 @@ namespace AppQuanLyHocSinh
 
         private void button_printStd_Click(object sender, EventArgs e)
         {
+            openchildForm(new PrintStdForm());
             hideSubmenu();
         }
 

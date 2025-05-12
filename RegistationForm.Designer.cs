@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridView_student = new Guna.UI2.WinForms.Guna2DataGridView();
             panel1 = new Panel();
             label7 = new Label();
@@ -63,28 +63,28 @@
             // 
             DataGridView_student.AllowUserToAddRows = false;
             DataGridView_student.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = Color.White;
-            DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            DataGridView_student.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             DataGridView_student.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DataGridView_student.BackgroundColor = Color.Gainsboro;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle8.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            DataGridView_student.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             DataGridView_student.ColumnHeadersHeight = 24;
             DataGridView_student.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.White;
-            dataGridViewCellStyle9.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(0, 71, 180);
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
-            DataGridView_student.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 12F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(0, 71, 180);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            DataGridView_student.DefaultCellStyle = dataGridViewCellStyle3;
             DataGridView_student.GridColor = Color.FromArgb(231, 229, 255);
             DataGridView_student.Location = new Point(12, 51);
             DataGridView_student.Name = "DataGridView_student";
@@ -304,6 +304,7 @@
             dateTimePicker_bDate.Name = "dateTimePicker_bDate";
             dateTimePicker_bDate.Size = new Size(250, 32);
             dateTimePicker_bDate.TabIndex = 26;
+            dateTimePicker_bDate.ValueChanged += dateTimePicker_bDate_ValueChanged;
             // 
             // label3
             // 
