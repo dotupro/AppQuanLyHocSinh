@@ -51,12 +51,12 @@ namespace AppQuanLyHocSinh
 
         public void showTable()
         {
-            DataGridView_course.DataSource = course.getCourseList(); 
+            DataGridView_course.DataSource = course.getCourseList();
         }
 
         private void CourseForm_Load(object sender, EventArgs e)
         {
-           showTable();            
+            showTable();
         }
     }
 }

@@ -3,6 +3,7 @@ namespace AppQuanLyHocSinh
     public partial class MainForm : Form
     {
         StudentClass student = new StudentClass();
+        CourseClass course = new CourseClass();
         public MainForm()
         {
             InitializeComponent();
@@ -11,6 +12,9 @@ namespace AppQuanLyHocSinh
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            comboBox_course.DataSource = course.getCourseList();
+            comboBox_course.DisplayMember = "CourseName";
+            comboBox_course.ValueMember = "CourseName";
             studentCount();
         }
 
@@ -61,6 +65,7 @@ namespace AppQuanLyHocSinh
 
         private void button_newScore_Click(object sender, EventArgs e)
         {
+            openchildForm(new ScoreForm());
             hideSubmenu();
         }
 
@@ -112,11 +117,13 @@ namespace AppQuanLyHocSinh
 
         private void button_manageScore_Click(object sender, EventArgs e)
         {
+            openchildForm(new ManageScoreForm());
             hideSubmenu();
         }
 
         private void button_scorePrint_Click(object sender, EventArgs e)
         {
+            openChildForm(new PrinterScoreForm());
             hideSubmenu();
         }
 

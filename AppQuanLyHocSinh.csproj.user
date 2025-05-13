@@ -10,16 +10,25 @@
     <Compile Update="ManageCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ManageScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ManageStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PrinterCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PrinterScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PrintStdForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RegistationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ScoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

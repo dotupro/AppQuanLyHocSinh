@@ -43,3 +43,6 @@ C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.CourseForm.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ManageCourseForm.resources
 C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.PrinterCourseForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ScoreForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.ManageScoreForm.resources
+C:\Users\Windows\source\repos\AppQuanLyHocSinh\AppQuanLyHocSinh\obj\Debug\net8.0-windows\AppQuanLyHocSinh.PrinterScoreForm.resources

@@ -58,7 +58,7 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             panel3 = new Panel();
-            comboBox1 = new ComboBox();
+            comboBox_course = new ComboBox();
             label12 = new Label();
             label11 = new Label();
             label10 = new Label();
@@ -489,7 +489,7 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(0, 71, 200);
-            panel3.Controls.Add(comboBox1);
+            panel3.Controls.Add(comboBox_course);
             panel3.Controls.Add(label12);
             panel3.Controls.Add(label11);
             panel3.Controls.Add(label10);
@@ -502,14 +502,14 @@
             panel3.Size = new Size(1071, 88);
             panel3.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBox_course
             // 
-            comboBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(807, 11);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(186, 28);
-            comboBox1.TabIndex = 7;
+            comboBox_course.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            comboBox_course.FormattingEnabled = true;
+            comboBox_course.Location = new Point(807, 11);
+            comboBox_course.Name = "comboBox_course";
+            comboBox_course.Size = new Size(186, 28);
+            comboBox_course.TabIndex = 7;
             // 
             // label12
             // 
@@ -674,7 +674,7 @@
         private Panel panel1;
         private Panel panel3;
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox comboBox_course;
         private Label label12;
         private Label label11;
         private Label label10;
