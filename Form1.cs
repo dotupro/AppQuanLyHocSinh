@@ -121,11 +121,6 @@ namespace AppQuanLyHocSinh
             hideSubmenu();
         }
 
-        private void button_scorePrint_Click(object sender, EventArgs e)
-        {
-            openChildForm(new PrinterScoreForm());
-            hideSubmenu();
-        }
 
         private Form activeform = null;
         private void openchildForm(Form childForm)
@@ -152,12 +147,18 @@ namespace AppQuanLyHocSinh
 
         private void button_exit_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonScorePrint_Click(object sender, EventArgs e)
+        {
+            openChildForm(new PrinterScoreForm());
+            hideSubmenu();
         }
     }
 }

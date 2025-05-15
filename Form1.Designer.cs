@@ -32,7 +32,7 @@
             button_exit = new Button();
             button_db = new Button();
             panel_scoreSubmenu = new Panel();
-            button_scorePrint = new Button();
+            buttonScorePrint = new Button();
             button_manageScore = new Button();
             button_newScore = new Button();
             button_score = new Button();
@@ -59,8 +59,6 @@
             pictureBox2 = new PictureBox();
             panel3 = new Panel();
             comboBox_course = new ComboBox();
-            label12 = new Label();
-            label11 = new Label();
             label10 = new Label();
             label_female = new Label();
             label_male = new Label();
@@ -97,7 +95,7 @@
             panel_slide.Dock = DockStyle.Left;
             panel_slide.Location = new Point(0, 0);
             panel_slide.Name = "panel_slide";
-            panel_slide.Size = new Size(200, 603);
+            panel_slide.Size = new Size(200, 701);
             panel_slide.TabIndex = 0;
             // 
             // button_exit
@@ -137,7 +135,7 @@
             // panel_scoreSubmenu
             // 
             panel_scoreSubmenu.BackColor = Color.FromArgb(0, 71, 200);
-            panel_scoreSubmenu.Controls.Add(button_scorePrint);
+            panel_scoreSubmenu.Controls.Add(buttonScorePrint);
             panel_scoreSubmenu.Controls.Add(button_manageScore);
             panel_scoreSubmenu.Controls.Add(button_newScore);
             panel_scoreSubmenu.Dock = DockStyle.Top;
@@ -146,21 +144,19 @@
             panel_scoreSubmenu.Size = new Size(179, 128);
             panel_scoreSubmenu.TabIndex = 5;
             // 
-            // button_scorePrint
+            // buttonScorePrint
             // 
-            button_scorePrint.Dock = DockStyle.Top;
-            button_scorePrint.FlatAppearance.BorderSize = 0;
-            button_scorePrint.FlatStyle = FlatStyle.Flat;
-            button_scorePrint.ForeColor = Color.White;
-            button_scorePrint.Location = new Point(0, 84);
-            button_scorePrint.Name = "button_scorePrint";
-            button_scorePrint.Padding = new Padding(35, 0, 0, 0);
-            button_scorePrint.Size = new Size(179, 42);
-            button_scorePrint.TabIndex = 4;
-            button_scorePrint.Text = "Print";
-            button_scorePrint.TextAlign = ContentAlignment.MiddleLeft;
-            button_scorePrint.UseVisualStyleBackColor = true;
-            button_scorePrint.Click += button_scorePrint_Click;
+            buttonScorePrint.BackColor = Color.FromArgb(0, 71, 200);
+            buttonScorePrint.Dock = DockStyle.Top;
+            buttonScorePrint.FlatStyle = FlatStyle.Flat;
+            buttonScorePrint.ForeColor = SystemColors.Control;
+            buttonScorePrint.Location = new Point(0, 84);
+            buttonScorePrint.Name = "buttonScorePrint";
+            buttonScorePrint.Size = new Size(179, 41);
+            buttonScorePrint.TabIndex = 2;
+            buttonScorePrint.Text = "Print";
+            buttonScorePrint.UseVisualStyleBackColor = false;
+            buttonScorePrint.Click += buttonScorePrint_Click;
             // 
             // button_manageScore
             // 
@@ -391,7 +387,7 @@
             panel_main.Dock = DockStyle.Fill;
             panel_main.Location = new Point(200, 0);
             panel_main.Name = "panel_main";
-            panel_main.Size = new Size(1071, 603);
+            panel_main.Size = new Size(1071, 701);
             panel_main.TabIndex = 6;
             // 
             // panel_cover
@@ -403,7 +399,7 @@
             panel_cover.Dock = DockStyle.Fill;
             panel_cover.Location = new Point(0, 0);
             panel_cover.Name = "panel_cover";
-            panel_cover.Size = new Size(1071, 603);
+            panel_cover.Size = new Size(1071, 701);
             panel_cover.TabIndex = 0;
             // 
             // panel2
@@ -481,7 +477,7 @@
             pictureBox2.Image = Properties.Resources.class1;
             pictureBox2.Location = new Point(0, 128);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1071, 387);
+            pictureBox2.Size = new Size(1071, 485);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -490,14 +486,12 @@
             // 
             panel3.BackColor = Color.FromArgb(0, 71, 200);
             panel3.Controls.Add(comboBox_course);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label11);
             panel3.Controls.Add(label10);
             panel3.Controls.Add(label_female);
             panel3.Controls.Add(label_male);
             panel3.Controls.Add(label_totalStd);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 515);
+            panel3.Location = new Point(0, 613);
             panel3.Name = "panel3";
             panel3.Size = new Size(1071, 88);
             panel3.TabIndex = 2;
@@ -510,28 +504,6 @@
             comboBox_course.Name = "comboBox_course";
             comboBox_course.Size = new Size(186, 28);
             comboBox_course.TabIndex = 7;
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label12.AutoSize = true;
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(884, 56);
-            label12.Name = "label12";
-            label12.Size = new Size(58, 20);
-            label12.TabIndex = 6;
-            label12.Text = "label12";
-            // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label11.AutoSize = true;
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(743, 56);
-            label11.Name = "label11";
-            label11.Size = new Size(58, 20);
-            label11.TabIndex = 5;
-            label11.Text = "label11";
             // 
             // label10
             // 
@@ -603,7 +575,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1271, 603);
+            ClientSize = new Size(1271, 701);
             Controls.Add(panel_main);
             Controls.Add(panel_slide);
             MinimumSize = new Size(1150, 650);
@@ -689,5 +661,6 @@
         private Label label2;
         private PictureBox pictureBox2;
         private Button button_exit;
+        private Button buttonScorePrint;
     }
 }
